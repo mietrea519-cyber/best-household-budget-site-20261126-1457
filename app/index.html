@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearth Ledger — Household Budget Planner</title>
+<meta name="description" content="Hearth Ledger is a household budget planner: track income, plan spending by category, watch savings goals grow, and see where every dollar goes each month.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">⌂</span>
+      <span class="brand-name">Hearth Ledger</span>
+      <span class="brand-tag">The Hartley household budget</span>
+    </a>
+    <nav class="site-nav" aria-label="Main sections">
+      <a href="#/" data-nav="dashboard">Dashboard</a>
+      <a href="#/planner" data-nav="planner">Budget Planner</a>
+      <a href="#/expenses" data-nav="expenses">Expenses</a>
+      <a href="#/goals" data-nav="goals">Savings Goals</a>
+      <a href="#/insights" data-nav="insights">Insights</a>
+    </nav>
+  </div>
+</header>
+<main id="app" class="wrap" aria-live="polite"></main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><strong>Hearth Ledger</strong> — a budget kept at home, by hand, for the people who live here. All figures are the Hartley household's own; nothing leaves this browser. Your edits are saved on this device only.</p>
+    <p class="footer-note">November 2026 · Income $6,850 / month · Planned spending $4,710 · Planned saving $2,140</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="format.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
